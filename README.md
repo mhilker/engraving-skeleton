@@ -1,16 +1,7 @@
-# Engraving
+# Engraving HTTP Application Skeleton
 
 [![Software License][ico-license]](LICENSE.md)
-[![Workflow][ico-workflow]](https://github.com/mhilker/engraving/actions)
-
-## Disclaimer
-
-Should you use this package? Probably not. This package is purely educational, and there are more mature alternatives out there.
-
-## Some interesting sources of inspiration
-
-- [Shrink Your Framework](https://speakerdeck.com/belanur/liebling-ich-habe-das-framework-geschrumpft-at-code-dot-talks-2015)
-- [No Framework Tutorial](https://github.com/PatrickLouys/no-framework-tutorial)
+[![Workflow][ico-workflow]](https://github.com/mhilker/engraving-skeleton/actions)
 
 ## Install dependencies
 
@@ -47,4 +38,4 @@ If you discover any security related issues, please email `maikhilker89@gmail.co
 The MIT License (MIT). Please see the [license file](LICENSE.md) for more information.
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-workflow]: https://img.shields.io/github/workflow/status/mhilker/engraving/build?style=flat-square
+[ico-workflow]: https://img.shields.io/github/workflow/status/mhilker/engraving-skeleton/build?style=flat-square
