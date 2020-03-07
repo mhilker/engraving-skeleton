@@ -1,0 +1,34 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: composer install
+
+      - name: Run phpcs
+        run: ./vendor/bin/phpcs
+
+      - name: Run phpunit
+        run: ./vendor/bin/phpunit
+
+      - name: Build containers
+        run: docker-compose build
+
+      - name: Run containers
+        run: docker-compose up -d
+
+      - name: Test home page
+        run: sleep 10 && curl --silent --show-error --fail -XGET http://localhost:8080
+
+      - name: Shut down containers
+        run: docker-compose down
